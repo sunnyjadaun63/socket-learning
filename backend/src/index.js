@@ -3,6 +3,7 @@ const bodyParser=require('body-parser');
 const  connectDB  = require('./database/ConnectDB');
 const homeRoute = require('./routes/Home.route.js');
 const authRoute=require('./routes/Auth.route.js')
+require("dotenv").config()
 
 const app=express()
 

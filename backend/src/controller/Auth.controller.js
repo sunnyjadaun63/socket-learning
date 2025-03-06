@@ -53,6 +53,7 @@ const Login=async(req,res)=>{
         let HashedPassword = await deCryptPassword(password, user.password);
         if (HashedPassword) {
           const token = await genarateToken(user);
+          
           const newUser = user;
     
           const { ...usersdata } = newUser;
